@@ -1,0 +1,23 @@
+variables:
+    GROUP_NAME: $CI_PROJECT_PATH_SLUG-$CI_COMMIT_REF_SLUG
+
+stages:
+    - test
+
+build-job:
+    stage: test
+    tags: 
+        - ui-tests
+    image: mcr.microsoft.com/playwright:v1.22.0-focal
+    variables:
+        GIT_STRATEGY: fetch
+    script:
+        - $NPM_INSTALL
+        - xvfb-run npm run $TEST
+    except:
+        - pushes
+    artifacts:
+        when: always
+        paths:
+            - playwright-report/*
+        expire_in: 1 week

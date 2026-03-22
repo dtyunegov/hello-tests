@@ -1,0 +1,142 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/user/Desktop/hello tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "C:/Users/user/Desktop/hello tests",
+        "testIgnore": [],
+        "testMatch": [
+          "projects/**/**.test.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report/"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "C:/Users/user/Desktop/hello tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.25.1",
+    "workers": 6,
+    "webServer": null,
+    "_watchMode": false,
+    "_webServers": [],
+    "_globalOutputDir": "C:\\Users\\user\\Desktop\\hello tests",
+    "_configDir": "C:\\Users\\user\\Desktop\\hello tests",
+    "_testGroupsCount": 1,
+    "_workerIsolation": "isolate-pools"
+  },
+  "suites": [
+    {
+      "title": "projects\\ab\\tests\\auth\\authentification.test.ts",
+      "file": "projects/ab/tests/auth/authentification.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Авторизация",
+          "file": "projects/ab/tests/auth/authentification.test.ts",
+          "line": 5,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Администратор: авторизация",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7188,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Переход на страницу авторизации",
+                          "duration": 752
+                        },
+                        {
+                          "title": "Заполнение и отправка формы авторизации",
+                          "duration": 541
+                        },
+                        {
+                          "title": "Ввод кода подтверждения email",
+                          "duration": 157
+                        },
+                        {
+                          "title": "Ввод пароля",
+                          "duration": 395
+                        },
+                        {
+                          "title": "Переход на главную страницу",
+                          "duration": 290
+                        },
+                        {
+                          "title": "Выбор валюты в форме 'К получению'",
+                          "duration": 3500
+                        },
+                        {
+                          "title": "Заполнение суммы 'К получению'",
+                          "duration": 43
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "projects/ab/tests/auth/authentification.test.ts",
+              "line": 6,
+              "column": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

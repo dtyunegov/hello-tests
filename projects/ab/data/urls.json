@@ -1,0 +1,14 @@
+{
+  "paths": {
+    "api": {
+      "confirm": "v1/auth/email/confirm",
+      "login": "v1/auth/login",
+      "verify": "v1/auth/email/confirm/verify",
+      "calculateAmount": "v1/payment/calculate/amount"
+    },
+    "ui": {
+      "base": "https://app.stage.p.ab-payments.ru/",
+      "auth": "auth"
+    }
+}
+}
